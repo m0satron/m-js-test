@@ -10519,6 +10519,11 @@ matter_js__WEBPACK_IMPORTED_MODULE_0__["Engine"].run(engine); // run the rendere
 
 matter_js__WEBPACK_IMPORTED_MODULE_0__["Render"].run(render);
 
+function Box(x, y, w, h) {
+  this.body = matter_js__WEBPACK_IMPORTED_MODULE_0__["Bodies"].rectangle(x, y, w, h);
+  matter_js__WEBPACK_IMPORTED_MODULE_0__["World"].add(world, this.body);
+}
+
 /***/ })
 
 /******/ });

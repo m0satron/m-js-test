@@ -22,3 +22,8 @@ Engine.run(engine);
 
 // run the renderer
 Render.run(render);
+
+function Box (x, y, w, h) {
+  this.body = Bodies.rectangle(x, y, w, h)
+  World.add(world, this.body)
+}
